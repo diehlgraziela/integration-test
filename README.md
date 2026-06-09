@@ -11,7 +11,8 @@ A integração é aberta em uma nova janela (popup) e pode:
 ---
 
 # Como executar o projeto
-Para executar esse projeto, utilizei a biblioteca `http-server`, com o comando `npx hhtp-server -p 9999`
+
+Para executar esse projeto, utilizei a biblioteca `http-server`, com o comando `npx hhtp-server -p 9998`
 
 ---
 

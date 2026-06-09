@@ -80,7 +80,7 @@ function copyContactId() {
 
 function sendOrderInfo() {
   const name = conversation.contactName;
-  const cpf = conversation.customFields.cpf_customer;
+  const cpf = conversation.customFields?.cpf_customer || "Não informado";
 
   triggerMessage(`Aqui estão as informações sobre o pedido nº *123456*\n *Comprador:* ${name}\n *CPF:* ${cpf}`);
 }
