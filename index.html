@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrações</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Meu sistema</h1>
+        </header>
+
+        <ul class="list">
+            <li class="list-item">
+                <b>Nome do contato:</b> <span id="name"></span>
+            </li>
+            <li class="list-item">
+                <b>Chat criado em:</b> <span id="createdAt"></span>
+            </li>
+            <li class="list-item">
+                <b>Última atualização:</b> <span id="updatedAt"></span>
+            </li>
+            <li class="list-item">
+                <b>Chat aberto há:</b> <span id="openTime"></span>
+            </li>
+            <li class="list-item">
+                <b>Departamento:</b> <span id="department"></span>
+            </li>
+            <li class="list-item">
+                <b>Tags:</b> <span id="tags"></span>
+            </li>
+            <li class="list-item">
+                <b>Campos customizados:</b> <span id="customField"></span>
+            </li>
+        </ul>
+
+        <p id="loading" style="display: none">Carregando...</p>
+
+        <p id="error" style="display: none">Erro ao carregar os dados</p>
+
+        <button id="refreshBtn">Atualizar dados</button>
+        <button id="copyContactIdBtn">Copiar ID do contato</button>
+        <button id="sendOrderInfoBtn">Enviar informações do pedido</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="helpers.js"></script>
+</body>
+
+</html>
