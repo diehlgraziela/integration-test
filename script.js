@@ -7,7 +7,7 @@ let conversation = null;
 function requestData() {
   console.log("INTEGRAÇÃO: data requested");
 
-  window.opener.postMessage(
+  window.parent.postMessage(
     {
       type: "get",
       payload: {
@@ -20,7 +20,7 @@ function requestData() {
 }
 
 function triggerMessage(text) {
-  window.opener.postMessage(
+  window.parent.postMessage(
     {
       type: "action",
       payload: {
